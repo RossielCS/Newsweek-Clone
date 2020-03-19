@@ -3,4 +3,32 @@
     display: none;
   }
 
+  .header01 {
+    display: none !important;
+  }
+
+  .header02 {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .header-wheater-location {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .header02-signsub {
+    font-size: 14px;
+  }
+
+  .header-sign,
+  .header-sub {
+    padding: 3px;
+  }
+
+  .header-sub-arrow {
+    display: none;
+  }
 }

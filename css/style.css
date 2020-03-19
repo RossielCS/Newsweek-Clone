@@ -1,17 +1,20 @@
 .container-fluid {
-  max-width: 1370px;
+  max-width: 1310px;
+  min-width: 337px;
 }
 
-.nav-lvl-01 {
-  height: 95px;
-  background-color: red;
+/* MAIN HEADER */
+
+.header01 {
+  background-color: #f72210;
 }
 
-.nav-01-wheater {
-  margin-top: 12px;
-  margin-left: 30px;
+.header01-wheater {
+  margin-top: 10.5px;
+  margin-left: 20px;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: cyan;
+  line-height: 34px;
+  color: white;
 }
 
 .weather-icon {
@@ -19,30 +22,81 @@
   width: 24px;
 }
 
-.nav-01-wheater-link {
+.header-wheater-link {
   font-weight: 700;
   font-size: 15px;
-  line-height: 34px;
+  color: white;
+}
+
+.header-wheater-link:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .wheather-date {
   font-weight: 400;
   font-size: 16px;
-  line-height: 34px;
 }
 
-.nav-lvl-02 {
-  height: 56px;
-  background-color: rgb(255, 169, 89);
+.header01-signsub {
+  padding-bottom: 15px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
 }
 
-.nav-lvl-03 {
-  display: none;
+.header-sign {
+  padding-right: 10px;
+  color: white;
+}
+
+.header-sub {
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #f72210;
+  background-color: white;
+}
+
+.header-sub:hover {
+  text-decoration: none;
+}
+
+/* MAIN HEADER */
+
+/* SECONDARY HEADER */
+
+.header02 {
+  visibility: hidden;
+  width: 100%;
   height: 50px;
-  background-color: rgb(137, 236, 71);
+  padding: 15px;
+  background-color: #f72210;
 }
 
-/*.nav-lvl-02 {
+.header02-logo {
+  height: 20px;
+  padding-right: 20px;
+}
+
+.header02-wheater {
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 34px;
+  color: white;
+}
+
+.header02-signsub {
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+}
+
+/* SECONDARY HEADER */
+
+/* NAVBAR */
+
+.nav-box {
+  visibility: hidden;
   height: 56px;
   padding: 15px 0 15px 0;
   display: flex;
@@ -52,13 +106,12 @@
   line-height: 24px;
 }
 
-.nav-lvl-02 li {
-  flex-grow: 1;
+.nav li {
   list-style-type: none;
   border-right: 1px solid rgb(217, 217, 217);
 }
 
-.nav-lvl-02 a {
+.nav a {
   display: block;
   width: max-content;
   margin: auto;
@@ -67,7 +120,7 @@
 
 .search-form input {
   max-width: 160px;
-}*/
+}
 
 /* NAVBAR */
 
