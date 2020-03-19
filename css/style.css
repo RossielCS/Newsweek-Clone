@@ -95,31 +95,49 @@
 
 /* NAVBAR */
 
-.nav-box {
-  visibility: hidden;
-  height: 56px;
+nav {
+  max-height: 56px;
+}
+
+.nav-list {
   padding: 15px 0 15px 0;
-  display: flex;
+  margin: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
+  list-style: none;
 }
 
-.nav li {
-  list-style-type: none;
+.nav-list li {
+  flex-grow: 1;
+  flex-shrink: 1;
   border-right: 1px solid rgb(217, 217, 217);
 }
 
-.nav a {
-  display: block;
-  width: max-content;
-  margin: auto;
+.nav-list a {
   color: black;
 }
 
+.search-container {
+  left: 1148px;
+  margin-right: 76px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 16px;
+}
+
 .search-form input {
-  max-width: 160px;
+  z-index: 1;
+  height: 56px;
+  width: 60px;
+  font-size: 18px;
+  border: none;
+  color: rgba(0, 0, 0, 0.55);
 }
 
 /* NAVBAR */
