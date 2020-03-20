@@ -1,8 +1,4 @@
 @media only screen and (max-width: 992px) {
-  .d-lg-block {
-    display: none;
-  }
-
   .header01 {
     display: none !important;
   }
@@ -11,9 +7,8 @@
     visibility: visible;
   }
 
-  nav {
-    height: 0;
-    overflow: hidden;
+  main {
+    margin-top: 49px;
   }
 }
 
