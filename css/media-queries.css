@@ -10,6 +10,11 @@
   .header02 {
     visibility: visible;
   }
+
+  nav {
+    height: 0;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 641px) {

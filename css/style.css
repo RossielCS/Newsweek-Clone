@@ -1,3 +1,7 @@
+body {
+  background-color: #f4f5f6;
+}
+
 .container-fluid {
   max-width: 1310px;
   min-width: 337px;
@@ -97,6 +101,8 @@
 
 nav {
   max-height: 56px;
+  background-color: white;
+  border-bottom: 2px solid #f4f5f6;
 }
 
 .nav-list {
@@ -133,7 +139,7 @@ nav {
 
 .search-form input {
   z-index: 1;
-  height: 56px;
+  height: 54px;
   width: 60px;
   font-size: 18px;
   border: none;
@@ -142,12 +148,40 @@ nav {
 
 /* NAVBAR */
 
-main div {
-  height: 1000px;
-  background-color: blueviolet;
+/* MAIN */
+
+main {
+  padding: 20px 30px 0 30px;
+  background-color: white;
 }
+
+.main01 {
+}
+
+.main01 > * {
+  display: block;
+  flex-shrink: 1;
+}
+
+.main01-feat {
+  min-width: 275px;
+}
+
+.main01-top-story {
+  min-width: 395px;
+}
+
+.main01-opinion {
+  min-width: 274px;
+}
+
+/* MAIN */
+
+/* FOOTER */
 
 footer div {
   height: 1000px;
   background-color: rgb(48, 136, 67);
 }
+
+/* FOOTER */
