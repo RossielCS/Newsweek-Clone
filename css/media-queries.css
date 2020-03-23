@@ -10,28 +10,12 @@
   main {
     margin-top: 49px;
   }
-
-  .main01-column02 {
-    min-width: 55%;
-  }
-
-  .main01-column03 {
-    max-width: 100%;
-  }
 }
 
 @media only screen and (max-width: 768px) {
   main {
     padding: 20px 15px 0 15px !important;
     background-color: white;
-  }
-
-  .main01-column01 {
-    order: 1;
-  }
-
-  .main01-column02 {
-    order: 0;
   }
 }
 
