@@ -17,10 +17,14 @@
     padding: 20px 15px 0 15px !important;
     background-color: white;
   }
+
+  .main02-bgimg {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 641px) {
-  .header-wheater-location {
+  .header-weather-location {
     display: none;
   }
 }

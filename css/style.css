@@ -1,5 +1,6 @@
 body {
   background-color: #f4f5f6;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container-fluid {
@@ -8,17 +9,56 @@ body {
   padding: 20px 30px 0 30px;
 }
 
-/* MAIN HEADER */
-.header01 {
+.bg-color-red {
   background-color: #f72210;
 }
 
-.header01-wheater {
+.color-red {
+  color: #f72210;
+}
+
+.color-red:hover {
+  text-decoration: none;
+  color: #f72210;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-white:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-black:hover {
+  text-decoration: none;
+}
+
+.text-deco-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+  color: black;
+}
+
+.hover-color-red:hover {
+  color: #f72210;
+}
+
+/* MAIN HEADER */
+
+.header01-weather {
   margin-top: 10.5px;
   margin-left: 20px;
-  font-family: 'Roboto Condensed', sans-serif;
   line-height: 34px;
-  color: white;
 }
 
 .weather-icon {
@@ -26,18 +66,16 @@ body {
   width: 24px;
 }
 
-.header-wheater-link {
+.header-weather-link {
   font-weight: 700;
   font-size: 15px;
-  color: white;
 }
 
-.header-wheater-link:hover {
+.header-weather-link:hover {
   text-decoration: none;
-  color: white;
 }
 
-.wheather-date {
+.weather-date {
   font-weight: 400;
   font-size: 16px;
 }
@@ -46,20 +84,16 @@ body {
   padding-bottom: 15px;
   padding-right: 20px;
   font-weight: 700;
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
 }
 
 .header-sign {
   padding-right: 10px;
-  color: white;
 }
 
 .header-sub {
   padding-left: 12px;
   padding-right: 12px;
-  color: #f72210;
-  background-color: white;
 }
 
 .header-sub:hover {
@@ -75,7 +109,6 @@ body {
   width: 100%;
   height: 50px;
   padding: 15px;
-  background-color: #f72210;
 }
 
 .header02-logo {
@@ -84,14 +117,11 @@ body {
 }
 
 .header02-weather {
-  font-family: 'Roboto Condensed', sans-serif;
   line-height: 34px;
-  color: white;
 }
 
 .header02-signsub {
   font-weight: 700;
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
 }
 
@@ -100,20 +130,23 @@ body {
 /* NAVBAR */
 
 nav {
-  background-color: white;
   border-bottom: 2px solid #f4f5f6;
+}
+
+.nav-buttons {
+  width: 100%;
+  padding-right: 178px;
 }
 
 .nav-list {
   padding: 15px 0 15px 0;
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
 }
 
-nav a {
-  color: black;
+.nav-list a:hover {
+  color: #f72210;
 }
 
 .no-break {
@@ -121,8 +154,12 @@ nav a {
 }
 
 .search-container {
-  max-width: 160px;
-  right: 20px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding-right: 110px;
+  text-align: right;
+  padding-left: 0;
 }
 
 .search-icon {
@@ -131,18 +168,27 @@ nav a {
 
 .search-form input {
   z-index: 1;
-  height: 54px;
   width: 60px;
+  height: 54px;
   font-size: 18px;
   border: none;
   color: rgba(0, 0, 0, 0.55);
-  background-color: white;
-  transition: padding-left 0.5s ease;
+  transition: width 0.3s ease;
 }
 
 .search-form input:focus {
   outline: none;
-  padding-left: 1136px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.search-form input:focus::placeholder {
+  color: transparent;
+}
+
+.header-tab-red {
+  right: 0;
+  top: -1px;
 }
 
 /* NAVBAR */
@@ -151,7 +197,52 @@ nav a {
 
 main {
   padding: 20px 30px 0 30px;
-  background-color: white;
+}
+
+main h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+main h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+main h4 {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(39, 39, 39);
+}
+
+main h4:hover {
+  text-decoration: none;
+}
+
+main h5 {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration-color: black;
+  color: black;
+}
+
+main h6 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
 }
 
 .tag,
@@ -159,9 +250,7 @@ main {
   position: absolute;
   z-index: 1;
   padding: 8px 15px 9px 15px;
-  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
-  color: #f72210;
 }
 
 .tag {
@@ -185,7 +274,14 @@ main {
   background-color: rgb(194, 212, 215);
 }
 
+.tag-small:hover {
+  text-decoration: none;
+  background-color: #272727;
+  color: rgb(194, 212, 215);
+}
+
 .img-fluid {
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -196,51 +292,8 @@ main {
   width: 95px;
 }
 
-main h2 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: rgba(3, 3, 3, 0.4);
-}
-
-main h3 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  color: black;
-}
-
-main h4 {
-  font-family: 'Lora', serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
-  color: rgb(39, 39, 39);
-}
-
-main h5 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 700;
-  text-decoration-color: black;
-  color: black;
-}
-
-main h6 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 600;
-  color: black;
-}
-
-main p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  color: rgb(51, 51, 51);
+.hover-culture-travel:hover {
+  text-decoration: none;
 }
 
 .short-art-a {
@@ -260,6 +313,11 @@ main p {
   margin-bottom: 0;
 }
 
+.more-stories h5:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+}
+
 .art-op-header {
   padding-left: 80px;
 }
@@ -267,15 +325,11 @@ main p {
 .art-op-writer {
   margin-top: 4px;
   margin-bottom: 0;
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   color: rgb(85, 85, 85);
-}
-
-.hr-red {
-  background-color: #f72210;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .debate-img {
@@ -294,7 +348,6 @@ main p {
   width: 40px;
   margin: 14px auto 18px auto;
   border-radius: 50% 50%;
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 40px;
@@ -303,10 +356,30 @@ main p {
   background-color: black;
 }
 
+.debate-hover {
+  color: black;
+}
+
+.debate-hover:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.debate-link {
+  color: rgb(51, 51, 51);
+}
+
+.debate-link:hover {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
 .signup-news {
   height: 163px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 20px;
+  margin: auto;
   margin-bottom: 30px;
   background-color: #f4f5f6;
 }
@@ -316,10 +389,14 @@ main p {
   width: 28px;
 }
 
-.signup-news > a {
-  font-family: 'Roboto Condensed', sans-serif;
+.update-preferences {
   font-size: 15px;
   line-height: 15px;
+  color: rgb(51, 51, 51);
+}
+
+.update-preferences:hover {
+  text-decoration: none;
   color: rgb(51, 51, 51);
 }
 
@@ -333,9 +410,6 @@ main p {
 .signup-btn {
   padding: 10px 10px 10px 12px;
   margin-bottom: 10px;
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color: #f72210;
-  color: white;
 }
 
 /* MAIN */
@@ -343,7 +417,6 @@ main p {
 /* MAIN 02 */
 
 .main02-header-text {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
@@ -351,12 +424,16 @@ main p {
 }
 
 .main02-art01-feat {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: black;
   background-color: #f4f5f6;
+}
+
+.main02-art01-feat:hover {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(219, 220, 221);
 }
 
 .main02-tag-bgred,
@@ -364,24 +441,20 @@ main p {
   padding-right: 7px;
   padding-left: 7px;
   margin-right: 7px;
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
 }
 
-.main02-tag-bgred {
-  color: white;
-  background-color: #f72210;
-}
-
-.main02-tag-bgwhite {
-  color: #f72210 !important;
+.magazine-boxes {
+  width: 100%;
+  padding-top: 8%;
+  overflow-x: hidden;
 }
 
 .main02-bgimg {
   position: relative;
-  top: 0;
+  width: 150%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -407,6 +480,15 @@ main p {
 }
 
 /* MAIN 03 */
+
+/* U.S. */
+
+.img-size-small {
+  width: 95px;
+  height: auto;
+}
+
+/* U.S. */
 
 #newsletter-signup {
   width: 50%;
