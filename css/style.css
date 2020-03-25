@@ -95,11 +95,6 @@ body {
   padding-right: 10px;
 }
 
-.header-sub {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
 .header-sub:hover {
   text-decoration: none;
 }
@@ -131,6 +126,10 @@ body {
 .header02-signsub {
   font-weight: 700;
   font-size: 18px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
 }
 
 /* SECONDARY HEADER */
@@ -538,6 +537,7 @@ main p {
 
 /* FOOTER */
 
+#copyright,
 .contact-list a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;

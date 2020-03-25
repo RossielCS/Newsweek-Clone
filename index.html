@@ -41,13 +41,18 @@
         </div>
   
   
-        <div class="d-flex align-items-end justify-content-end header01-signsub">
+        <div class="d-flex align-items-end justify-content-end mb-1 header01-signsub">
           <a class="header-sign color-white" href="https://subscription.newsweek.com/auth">
             SIGN IN
           </a>
-          <a class="header-sub color-red bg-color-white"
+          <a class="pl-2 header-sub color-red bg-color-white"
             href="https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&utm_medium=top-nav&utm_campaign=subscribe-button#12weeks">
-            SUBSCRIBE >
+            <div class="d-inline-block ">
+              <span class="align-middle">
+                SUBSCRIBE
+              </span>            
+              <img src="./img/arrow-right-red.svg" alt="more than">
+            </div>
           </a>
         </div>
       </div>
@@ -146,20 +151,32 @@
           21° 
           <span class="header-weather-location">
             Buenos Aires, AR
-            <img class="align-baseline arrow-icon" src="https://g.newsweek.com/img/weather/ic-white-arrow.png"
+            <img class="align-baseline" src="https://g.newsweek.com/img/weather/ic-white-arrow.png"
             alt="more-than sign">
           </span>
         </a>
       </div>
 
-      <div class="d-flex align-items-end justify-content-end header02-signsub">
+      <div class="d-flex align-items-center justify-content-end header02-signsub">
         <a class="header-sign color-white" href="https://subscription.newsweek.com/auth">
-          SIGN IN
+          <span class="align-middle">
+            SIGN IN
+          </span>          
         </a>
-        <a class="header-sub color-red bg-color-white"
+        <a class="px-2 header-sub color-red bg-color-white"          
           href="https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&utm_medium=top-nav&utm_campaign=subscribe-button#12weeks">
-          SUBSCRIBE <span class="header-sub-arrow">></span>
-        </a>        
+          <div class="d-inline-block">
+            <span class="align-middle">
+              SUBSCRIBE
+            </span>            
+            <img class="header-sub-arrow" src="./img/arrow-right-red.svg" alt="more than">
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon pb-2 pl-1">
+            <img src="./img/menu.svg" alt="menu">
+          </span>
+        </button>      
       </div>      
     </div>
     <!-- SECONDARY HEADER -->
@@ -1730,15 +1747,57 @@
     </div>
     <!-- SUBSCRIBE -->    
   </main>
-
+  <!--d-flex justify-content-between align-items-end flex-wrap-->
   <footer class="container-fluid pb-4 bg-color-white">
-    <div class="d-flex align-items-baseline border-bottom">
-      <img src="./img/Newsweek-logo-bgwhite.png" alt="newsweek logo">
-      <span>© 2020 Newsweek</span>
+    <div class="row pb-1 mx-0 border-bottom">
+      <div class="col-md-9 d-flex flex-wrap align-items-end">
+        <!--d-flex flex-wrap align-items-end-->
+        <div class="row d-flex align-items-end">
+          <span>
+            <img class="col-md py-1 pl-0" src="./img/Newsweek-logo-bgwhite.png" alt="newsweek logo">
+          </span>                 
+          <span class="col-md py-1 pl-0" id="copyright">
+            © 2020 Newsweek
+          </span>
+        </div>
+      </div>      
+      
+      <div class="col-md pl-0 d-flex align-items-end social-icons">
+        <ul class="nav py-1">
+          <li class="pr-1">
+            <a href="https://www.facebook.com/Newsweek" target="_blank">
+              <img src="./img/icons8-facebook-old-26.png" alt="facebook">
+            </a>
+          </li>
+      
+          <li class="px-1">
+            <a href="https://twitter.com/Newsweek" target="_blank">
+              <img src="./img/icons8-twitter-26.png" alt="twitter">
+            </a>
+          </li>
+      
+          <li class="px-1">
+            <a href="https://instagram.com/newsweek/" target="_blank">
+              <img src="./img/icons8-instagram-old-26.png" alt="instagram">
+            </a>
+          </li>
+      
+          <li class="px-1">
+            <a href="https://newsweekscience.tumblr.com/" target="_blank">
+              <img src="./img/icons8-tumblr-26.png" alt="tumblr">
+            </a>
+          </li>
+      
+          <li class="px-1">
+            <a href="https://www.linkedin.com/company/newsweek" target="_blank">
+              <img src="./img/icons8-linkedin-2-26.png" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>      
     </div>
 
-    <div>
-      <div>        
+    <div class="pl-0">       
         <ul class="nav justify-content-start pt-2 contact-list">
           <li class="pr-2 font-weight-bold">
             Editions:
@@ -1773,9 +1832,7 @@
             </a>
           </li>
         </ul>
-      </div>
 
-      <div>
         <ul class="nav justify-content-start flex-wrap contact-list">
           <li class="pr-2 mr-2 mt-2 border-right">
             <a href="https://www.newsweek.com/about-newsweek">
@@ -1855,7 +1912,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </div>
   </footer>
 
@@ -1872,7 +1928,6 @@
 </body>
 
 <script>
-
   window.onscroll = function() {myFunction()};
   
   var navTwo = document.getElementById("header02-s");
@@ -1887,9 +1942,7 @@
     {
       navTwo.classList.remove("visibleOffset")
     }
-  }
-  
-  
+  }  
   </script>
 
 </html>

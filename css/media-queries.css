@@ -56,7 +56,7 @@
   }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 482px) {
   .header02-signsub {
     font-size: 14px;
   }
@@ -67,6 +67,10 @@
   }
 
   .header-sub-arrow {
+    display: none;
+  }
+
+  .header-weather-link {
     display: none;
   }
 }
