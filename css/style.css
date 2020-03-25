@@ -105,7 +105,6 @@ body {
 
 .header02 {
   visibility: hidden;
-  width: 100%;
   height: 50px;
   padding: 15px;
 }
@@ -116,7 +115,6 @@ body {
 
 .header02-logo {
   height: 20px;
-  padding-right: 20px;
 }
 
 .header02-weather {
@@ -141,7 +139,6 @@ nav {
 }
 
 .nav-buttons {
-  width: 100%;
   padding-right: 178px;
 }
 

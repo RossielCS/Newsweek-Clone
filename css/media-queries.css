@@ -19,11 +19,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  main {
-    padding: 20px 15px 0 15px !important;
-    background-color: white;
-  }
-
   .main02-bgimg {
     width: 100%;
   }
@@ -40,6 +35,10 @@
 
   #newsletter-signup {
     height: 160px;
+  }
+
+  .social-icons {
+    justify-content: left !important;
   }
 }
 
@@ -69,7 +68,9 @@
   .header-sub-arrow {
     display: none;
   }
+}
 
+@media only screen and (max-width: 400px) {
   .header-weather-link {
     display: none;
   }

@@ -1,7 +1,10 @@
 # Newsweek-Clone
  This project is for learning to use Twitter’s Bootstrap framework.
+ I use Bootstrap's classes for layout, styling elements and to make the web page responsive.
 
-![screenshot](./app_screenshot.png)
+![Desktop](https://user-images.githubusercontent.com/60085697/77584608-de90da80-6ec1-11ea-91bb-ecb61474f9ae.png)
+
+![Mobile](https://user-images.githubusercontent.com/60085697/77584802-33345580-6ec2-11ea-96da-e6d67b3dd64e.png)
 
 Additional description about the project and its features.
 
