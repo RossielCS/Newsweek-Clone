@@ -538,14 +538,14 @@ main p {
 /* FOOTER */
 
 #copyright,
-.contact-list a {
+.contact-link {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 15px;
   color: rgb(102, 102, 102);
 }
 
-.contact-list a:hover {
+.contact-link:hover {
   text-decoration: none;
   color: black;
 }
