@@ -12,6 +12,12 @@
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .newsletter-box {
+    height: 92%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   main {
     padding: 20px 15px 0 15px !important;
@@ -20,6 +26,27 @@
 
   .main02-bgimg {
     width: 100%;
+  }
+
+  .newsletter-box,
+  .subscribe-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .magazines-group {
+    margin-bottom: 25px;
+  }
+
+  #newsletter-signup {
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #newsletter-signup {
+    width: 48%;
+    max-width: 191px;
   }
 }
 
