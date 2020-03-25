@@ -54,7 +54,7 @@
       <!-- MAIN HEADER -->
   
       <!-- NAVBAR -->
-      <nav class="row m-0 position-relative bg-color-white d-none d-lg-block">      
+      <nav class="row m-0 position-relative bg-color-white d-none d-lg-block">
         <div class="nav-buttons">
           <ul class="d-flex justify-content-between nav nav-list">
             <li class="flex-fill p-0 text-center border-right">
@@ -122,22 +122,20 @@
                 Weather
               </a>
             </li>
-          </ul>      
+          </ul>
         </div>
-
-        <div class="position-absolute pl-0 search-container">
-          <form class="search-form" action="#">
-            <input class="bg-color-white" type="text" placeholder="Search" name="search">
-            <img class="position-absolute search-icon" src="./img/search-icon.svg" alt="magnifying glass">
-          </form>          
-        </div>
+      
+        <form class="search-form position-absolute" action="#">
+          <input class="bg-color-white" type="text" placeholder="Search" name="search">
+          <img class="position-absolute search-icon" src="./img/search-icon.svg" alt="magnifying glass">
+        </form>
         <img class="position-absolute header-tab-red" src="./img/header-tab.png" alt="tab">
       </nav>
       <!-- NAVBAR -->
     </div>
   
     <!-- SECONDARY HEADER -->
-    <div class="fixed-top d-flex justify-content-between align-items-center header02 bg-color-red">  
+    <div class="fixed-top d-flex justify-content-between align-items-center header02 bg-color-red" id="header02-s">  
       <div class="header02-weather color-white">
         <a href="https://www.newsweek.com/">
           <img class="header02-logo" src="./img/Newsweek-logo.png" alt="newsweek logo">
@@ -1872,5 +1870,26 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 </body>
+
+<script>
+
+  window.onscroll = function() {myFunction()};
+  
+  var navTwo = document.getElementById("header02-s");
+
+  function myFunction() {
+    
+    if (window.pageYOffset >= 100) 
+    {
+      navTwo.classList.add("visibleOffset")
+    } 
+    else 
+    {
+      navTwo.classList.remove("visibleOffset")
+    }
+  }
+  
+  
+  </script>
 
 </html>

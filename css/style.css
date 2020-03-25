@@ -9,6 +9,8 @@ body {
   padding: 20px 30px 0 30px;
 }
 
+/* GLOBAL CLASSES */
+
 .bg-color-red {
   background-color: #f72210;
 }
@@ -52,6 +54,8 @@ body {
 .hover-color-red:hover {
   color: #f72210;
 }
+
+/* GLOBAL CLASSES */
 
 /* MAIN HEADER */
 
@@ -111,6 +115,10 @@ body {
   padding: 15px;
 }
 
+.visibleOffset {
+  visibility: visible;
+}
+
 .header02-logo {
   height: 20px;
   padding-right: 20px;
@@ -153,14 +161,14 @@ nav {
   white-space: nowrap;
 }
 
-.search-container {
+.search-form {
   z-index: 1;
   top: 0;
   right: 0;
+  width: fit-content;
   padding-right: 110px;
   text-align: right;
   padding-left: 0;
-  transition: width 0.3s ease;
 }
 
 .search-icon {
@@ -174,14 +182,16 @@ nav {
   font-size: 18px;
   border: none;
   color: rgba(0, 0, 0, 0.55);
+  transition: width 0.3s ease;
 }
 
 .search-form input:focus {
   outline: none;
   padding-left: 15px;
+  width: 100%;
 }
 
-.search-container:focus {
+.search-form:focus-within {
   width: 100%;
 }
 
@@ -196,7 +206,7 @@ nav {
 
 /* NAVBAR */
 
-/* MAIN */
+/* MAIN 01 */
 
 main {
   padding: 20px 30px 0 30px;
@@ -415,9 +425,9 @@ main p {
   margin-bottom: 10px;
 }
 
-/* MAIN */
+/* MAIN 01 */
 
-/* MAIN 02 */
+/* IN THE MAGAZINE */
 
 .main02-header-text {
   font-size: 19px;
@@ -462,9 +472,9 @@ main p {
   transform: translateX(-50%);
 }
 
-/* MAIN 02 */
+/* IN THE MAGAZINE 02 */
 
-/* MAIN 03 */
+/* FEATURED SLIDESHOWS */
 
 .count-imgs {
   bottom: 7px;
@@ -482,7 +492,7 @@ main p {
   font-size: 19px;
 }
 
-/* MAIN 03 */
+/* FEATURED SLIDESHOWS */
 
 /* U.S. */
 
@@ -492,6 +502,8 @@ main p {
 }
 
 /* U.S. */
+
+/* SUBSCRIBE */
 
 #newsletter-signup {
   background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
@@ -521,6 +533,8 @@ main p {
 .main11 .signup-btn:hover {
   background-color: #de1f0e;
 }
+
+/* SUBSCRIBE */
 
 /* FOOTER */
 
