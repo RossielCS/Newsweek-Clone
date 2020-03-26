@@ -1,4 +1,12 @@
 @media only screen and (max-width: 992px) {
+  main {
+    margin-top: 49px;
+  }
+
+  .container-fluid {
+    padding: 20px 15px 0 15px;
+  }
+
   .header01 {
     display: none !important;
   }
@@ -7,9 +15,6 @@
     visibility: visible;
   }
 
-  main {
-    margin-top: 49px;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -23,6 +28,13 @@
     width: 100%;
   }
 
+  .culture-travel,
+  .more-stories-m,
+  .latest-news {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .newsletter-box,
   .subscribe-box {
     flex-direction: column;
@@ -31,6 +43,7 @@
 
   .magazines-group {
     margin-bottom: 25px;
+    padding-right: 50px;
   }
 
   #newsletter-signup {
