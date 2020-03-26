@@ -1,0 +1,563 @@
+body {
+  background-color: #f4f5f6;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container-fluid {
+  max-width: 1310px;
+  min-width: 337px;
+  padding: 20px 30px 0 30px;
+}
+
+/* GLOBAL CLASSES */
+
+.bg-color-red {
+  background-color: #f72210;
+}
+
+.color-red {
+  color: #f72210;
+}
+
+.color-red:hover {
+  text-decoration: none;
+  color: #f72210;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-white:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-black:hover {
+  text-decoration: none;
+}
+
+.text-deco-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+  color: black;
+}
+
+.hover-color-red:hover {
+  color: #f72210;
+}
+
+/* GLOBAL CLASSES */
+
+/* MAIN HEADER */
+
+.header01-weather {
+  margin-top: 10.5px;
+  margin-left: 20px;
+  line-height: 34px;
+}
+
+.weather-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.header-weather-link {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.header-weather-link:hover {
+  text-decoration: none;
+}
+
+.weather-date {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header01-signsub {
+  padding-bottom: 15px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header-sign {
+  padding-right: 10px;
+}
+
+.header-sub:hover {
+  text-decoration: none;
+}
+
+/* MAIN HEADER */
+
+/* SECONDARY HEADER */
+
+.header02 {
+  visibility: hidden;
+  height: 50px;
+  padding: 15px;
+}
+
+.visibleOffset {
+  visibility: visible;
+}
+
+.header02-logo {
+  height: 20px;
+}
+
+.header02-weather {
+  line-height: 34px;
+}
+
+.header02-signsub {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* SECONDARY HEADER */
+
+/* NAVBAR */
+
+nav {
+  border-bottom: 2px solid #f4f5f6;
+}
+
+.nav-buttons {
+  padding-right: 178px;
+}
+
+.nav-list {
+  padding: 15px 0 15px 0;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.nav-list a:hover {
+  color: #f72210;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.search-form {
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  padding-right: 110px;
+  text-align: right;
+  padding-left: 0;
+}
+
+.search-icon {
+  top: 16px;
+}
+
+.search-form input {
+  z-index: 1;
+  width: 60px;
+  height: 54px;
+  font-size: 18px;
+  border: none;
+  color: rgba(0, 0, 0, 0.55);
+  transition: width 0.3s ease;
+}
+
+.search-form input:focus {
+  outline: none;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.search-form:focus-within {
+  width: 100%;
+}
+
+.search-form input:focus::placeholder {
+  color: transparent;
+}
+
+.header-tab-red {
+  right: 0;
+  top: -1px;
+}
+
+/* NAVBAR */
+
+/* MAIN 01 */
+
+main {
+  padding: 20px 30px 0 30px;
+}
+
+main h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+main h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+main h4 {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(39, 39, 39);
+}
+
+main h4:hover {
+  text-decoration: none;
+}
+
+main h5 {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration-color: black;
+  color: black;
+}
+
+main h6 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.tag,
+.tag-count {
+  position: absolute;
+  z-index: 1;
+  padding: 8px 15px 9px 15px;
+  font-weight: 700;
+}
+
+.tag {
+  bottom: 0;
+  left: 0;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.tag-small {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 10px;
+  padding: 0 6px 0 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #272727;
+  background-color: rgb(194, 212, 215);
+}
+
+.tag-small:hover {
+  text-decoration: none;
+  background-color: #272727;
+  color: rgb(194, 212, 215);
+}
+
+.img-fluid {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.img-small {
+  float: left;
+  margin-right: 15px;
+  height: 95px;
+  width: 95px;
+}
+
+.main01 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main01-column01,
+.main01-column03 {
+  position: sticky;
+  bottom: 0;
+  align-self: flex-end;
+}
+
+.hover-culture-travel:hover {
+  text-decoration: none;
+}
+
+.short-art-a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.more-stories article,
+.more-stories-m article {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.more-stories article p {
+  margin-bottom: 0;
+}
+
+.more-stories h5:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+}
+
+.art-op-header {
+  padding-left: 80px;
+}
+
+.art-op-writer {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: rgb(85, 85, 85);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.debate-img {
+  margin-top: -15px;
+  height: 63px;
+  width: 63px;
+}
+
+.debate-double-border {
+  border-bottom-style: double;
+  border-bottom-color: #d9d9d9;
+}
+
+.debate-vs {
+  height: 40px;
+  width: 40px;
+  margin: 14px auto 18px auto;
+  border-radius: 50% 50%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(214, 214, 214);
+  background-color: black;
+}
+
+.debate-hover {
+  color: black;
+}
+
+.debate-hover:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.debate-link {
+  color: rgb(51, 51, 51);
+}
+
+.debate-link:hover {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.signup-news {
+  height: 163px;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: #f4f5f6;
+}
+
+.newsweek-icon {
+  height: 28px;
+  width: 28px;
+}
+
+.update-preferences {
+  font-size: 15px;
+  line-height: 15px;
+  color: rgb(51, 51, 51);
+}
+
+.update-preferences:hover {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.signup-p {
+  margin-bottom: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 19px;
+  line-height: 19px;
+}
+
+.signup-btn {
+  padding: 10px 10px 10px 12px;
+  margin-bottom: 10px;
+}
+
+/* MAIN 01 */
+
+/* IN THE MAGAZINE */
+
+.main02-header-text {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #333;
+}
+
+.main02-art01-feat {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  background-color: #f4f5f6;
+}
+
+.main02-art01-feat:hover {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(219, 220, 221);
+}
+
+.main02-tag-bgred,
+.main02-tag-bgwhite {
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-right: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.magazine-boxes {
+  width: 100%;
+  padding-top: 8%;
+  overflow-x: hidden;
+}
+
+.main02-bgimg {
+  position: relative;
+  width: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* IN THE MAGAZINE 02 */
+
+/* FEATURED SLIDESHOWS */
+
+.count-imgs {
+  bottom: 7px;
+  height: 52px;
+  width: 70px;
+  background-image: url("https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+}
+
+.tag-count {
+  bottom: 5px;
+  left: 13px;
+  font-size: 19px;
+}
+
+/* FEATURED SLIDESHOWS */
+
+/* U.S. */
+
+.img-size-small {
+  width: 95px;
+  height: auto;
+}
+
+/* U.S. */
+
+/* SUBSCRIBE */
+
+#newsletter-signup {
+  background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.subscribe-box {
+  padding: 35px;
+  background-color: #f4f5f6;
+  align-items: center;
+}
+
+.magazine-top {
+  top: 12px;
+  left: 80px;
+}
+
+.magazines-group {
+  padding-right: 80px;
+  padding-bottom: 10px;
+  margin-right: 35px;
+}
+
+.main11 .signup-btn:hover {
+  background-color: #de1f0e;
+}
+
+/* SUBSCRIBE */
+
+/* FOOTER */
+
+#copyright,
+.contact-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 15px;
+  color: rgb(102, 102, 102);
+}
+
+.contact-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* FOOTER */

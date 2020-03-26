@@ -1,0 +1,99 @@
+@media only screen and (max-width: 992px) {
+  main {
+    margin-top: 49px;
+  }
+
+  .container-fluid {
+    padding: 20px 15px 0 15px;
+  }
+
+  .header01 {
+    display: none !important;
+  }
+
+  .header02 {
+    visibility: visible;
+  }
+
+  .main01-column03 {
+    position: static;
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .newsletter-box {
+    height: 92%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main01-column01 {
+    position: static;
+    align-self: flex-start;
+  }
+
+  .main02-bgimg {
+    width: 100%;
+  }
+
+  .culture-travel,
+  .more-stories-m,
+  .latest-news {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .newsletter-box,
+  .subscribe-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .magazines-group {
+    margin-bottom: 25px;
+    padding-right: 50px;
+  }
+
+  #newsletter-signup {
+    height: 160px;
+  }
+
+  .social-icons {
+    justify-content: left !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #newsletter-signup {
+    width: 48%;
+    max-width: 191px;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .header-weather-location {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .header02-signsub {
+    font-size: 14px;
+  }
+
+  .header-sign,
+  .header-sub {
+    padding: 3px;
+  }
+
+  .header-sub-arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 406px) {
+  .header-weather-link {
+    display: none;
+  }
+}
