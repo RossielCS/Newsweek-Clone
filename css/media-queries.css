@@ -15,6 +15,10 @@
     visibility: visible;
   }
 
+  .main01-column03 {
+    position: static;
+    align-self: flex-start;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -24,6 +28,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .main01-column01 {
+    position: static;
+    align-self: flex-start;
+  }
+
   .main02-bgimg {
     width: 100%;
   }
@@ -83,7 +92,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 406px) {
   .header-weather-link {
     display: none;
   }

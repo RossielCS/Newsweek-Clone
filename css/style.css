@@ -301,6 +301,18 @@ main p {
   width: 95px;
 }
 
+.main01 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main01-column01,
+.main01-column03 {
+  position: sticky;
+  bottom: 0;
+  align-self: flex-end;
+}
+
 .hover-culture-travel:hover {
   text-decoration: none;
 }
@@ -311,7 +323,8 @@ main p {
   margin-bottom: 20px;
 }
 
-.more-stories article {
+.more-stories article,
+.more-stories-m article {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
